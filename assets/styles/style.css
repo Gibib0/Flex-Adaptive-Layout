@@ -64,7 +64,7 @@ h2 {
 	margin: 0;
 	padding: 26px 0;
 	text-align: center;
-	font-size: 25px;
+	font-size: 26px;
 }
 
 .column-text {
@@ -82,7 +82,7 @@ h2 {
 	grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
-#section-b > ul {
+#section-b ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -166,3 +166,21 @@ h2 {
 	font-size: 18px;
 	padding: 18px 0;
 }
+
+#main-footer {
+	padding: 35px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+}
+
+.title-div, .link-div{
+	grid-column: span 2;
+	text-align: center;
+}
+
+.link-div a {
+	text-decoration: none;
+	color: rgb(33, 129, 238);
+}
+
