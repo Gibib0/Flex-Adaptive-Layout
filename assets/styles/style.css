@@ -64,7 +64,7 @@ h2 {
 	margin: 0;
 	padding: 26px 0;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 25px;
 }
 
 .column-text {
@@ -133,4 +133,36 @@ h2 {
 .content-text {
 	padding: 18px 0;
 	font-size: 18px;
+}
+
+#section-d {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+	padding: 35px;
+	color: white;
+}
+
+.box-1 {
+	grid-column: span 2;
+	background-color: rgb(33, 129, 238);
+	text-align: center;
+}
+
+.box-2 {
+	grid-column: span 2;
+	background-color: #333;
+	text-align: center;
+}
+
+.box h2 {
+	width: 100%;
+}
+
+.box p {
+	font-size: 18px;
+	padding: 18px 0;
 }
