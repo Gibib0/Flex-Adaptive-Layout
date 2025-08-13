@@ -10,6 +10,12 @@ body {
 	line-height: 1.6;
 }
 
+p {
+	font-size: 18px;
+	padding: 18px 0;
+	text-align: center;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -34,11 +40,6 @@ body {
 h1 {
 	font-size: 35px;
 	padding-top: 100px;
-}
-
-.header-text {
-	font-size: 18px;
-	padding: 17px 0;
 }
 
 .btn {
@@ -68,6 +69,7 @@ h2 {
 	column-gap: 22px;
 	max-width: 880px;
 	margin: 0 auto;
+	font-size: 18px;
 }
 
 #section-b {
@@ -104,12 +106,6 @@ h2 {
 	text-align: center;
 }
 
-.card-text {
-	padding: 18px 0;
-	font-size: 18px;
-	text-align: center;
-}
-
 .card img {
 	width: 100%;
 	object-fit: cover;
@@ -119,11 +115,6 @@ h2 {
 #section-c {
 	background-color: white;
 	padding: 35px;
-}
-
-.content-text {
-	padding: 18px 0;
-	font-size: 18px;
 }
 
 #section-d {
@@ -150,11 +141,6 @@ h2 {
 
 .box h2 {
 	width: 100%;
-}
-
-.box p {
-	font-size: 18px;
-	padding: 18px 0;
 }
 
 #main-footer {
