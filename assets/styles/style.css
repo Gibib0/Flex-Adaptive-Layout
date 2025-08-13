@@ -28,7 +28,7 @@ body {
 	grid-column: 2 / span 2;
 	justify-self: center;
 	text-align: center;
-	max-width: 800px;
+	max-width: 880px;
 	padding: 0 26px;
 	z-index: 2;
 }
@@ -60,26 +60,23 @@ h1 {
 	padding: 0 0 35px;
 }
 
-.content-title {
+h2 {
 	margin: 0;
 	padding: 26px 0;
 	text-align: center;
+	font-size: 1.5em;
 }
 
-.content-text p{
-	margin: 0;
-}
-
-.content-text {
+.column-text {
 	columns: 2;
 	column-width: 100px;
 	column-gap: 22px;
-	max-width: 800px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
 #section-b {
-	padding: 35px 18px 18px;
+	padding: 35px 18px;
 	display: grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -89,7 +86,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
+	gap: 40px;
 	list-style: none;
 	width: 100%;
 	max-width: 880px;
@@ -126,4 +123,14 @@ h1 {
 	width: 100%;
 	object-fit: cover;
 	object-position: top;
+}
+
+#section-c {
+	background-color: white;
+	padding: 35px;
+}
+
+.content-text {
+	padding: 18px 0;
+	font-size: 18px;
 }
