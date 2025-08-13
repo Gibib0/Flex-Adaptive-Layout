@@ -12,9 +12,7 @@ body {
 
 .grid {
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 2fr 2fr 1fr;
-	min-height: 100px;
 }
 
 #showcase {
@@ -36,13 +34,11 @@ body {
 h1 {
 	font-size: 35px;
 	padding-top: 100px;
-	margin: 0;
 }
 
 .header-text {
 	font-size: 18px;
 	padding: 17px 0;
-	margin: 0;
 }
 
 .btn {
@@ -61,7 +57,6 @@ h1 {
 }
 
 h2 {
-	margin: 0;
 	padding: 26px 0;
 	text-align: center;
 	font-size: 26px;
@@ -78,17 +73,14 @@ h2 {
 #section-b {
 	padding: 35px 18px;
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 2fr 2fr 1fr;
 }
 
 #section-b ul {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	gap: 40px;
 	list-style: none;
-	width: 100%;
 	max-width: 880px;
 	grid-column: 2 / span 2;
 	justify-self: center;
@@ -109,7 +101,6 @@ h2 {
 
 .card-title {
 	padding: 20px 0;
-	width: 220px;
 	text-align: center;
 }
 
@@ -137,7 +128,6 @@ h2 {
 
 #section-d {
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: repeat(4, 1fr);
 }
 
@@ -174,13 +164,40 @@ h2 {
 	font-size: 18px;
 }
 
-.title-div, .link-div{
+#main-footer div{
 	grid-column: span 2;
 	text-align: center;
 }
 
-.link-div a {
+#main-footer div a {
 	text-decoration: none;
 	color: rgb(33, 129, 238);
 }
 
+@media (max-width: 700px) {
+	#section-a .column-text {
+		columns: 1;
+	}
+
+	#section-b ul {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	#section-d {
+		grid-template-columns: 1fr;
+	}
+
+	.box-1, .box-2 {
+		grid-column: span 4;
+	}
+
+	#main-footer {
+		grid-template-columns: 1fr;
+	}
+
+	#main-footer div {
+		grid-column: span 4;
+		padding: 10px 0;
+	}
+}
