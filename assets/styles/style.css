@@ -16,16 +16,15 @@ p {
 	text-align: center;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 2fr 2fr 1fr;
-}
-
 #showcase {
 	position: relative;
 	min-height: 450px;
 	color: white;
-	background: #333 url('/assets/images/pexels-photo-248515.png') no-repeat center/cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	 url('/assets/images/pexels-photo-248515.png') no-repeat center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .content-wrapper {
