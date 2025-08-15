@@ -79,11 +79,11 @@ h2 {
 
 #section-b ul {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	gap: 40px;
 	list-style: none;
-	max-width: 1200px;
+	width: 100%;
 }
 
 .card {
@@ -153,7 +153,7 @@ h2 {
 }
 
 @media (max-width: 700px) {
-	#section-a .column-text {
+	#section-a .column-text p {
 		columns: 1;
 	}
 
@@ -163,19 +163,16 @@ h2 {
 	}
 
 	#section-d {
-		grid-template-columns: 1fr;
-	}
-
-	.box-1, .box-2 {
-		grid-column: span 4;
+		flex-direction: column;
 	}
 
 	#main-footer {
-		grid-template-columns: 1fr;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#main-footer div {
-		grid-column: span 4;
 		padding: 10px 0;
 	}
 }
