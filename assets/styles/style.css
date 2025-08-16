@@ -6,31 +6,42 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
 	background-color: #333;
 	line-height: 1.6;
 }
 
 p {
 	font-size: 18px;
-	padding: 18px 0;
+	padding: 18px 0; 
+	text-align: center; 
+}
+
+.content-wrapper {
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 }
 
 #showcase {
-	position: relative;
 	min-height: 450px;
 	color: white;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	 url('/assets/images/pexels-photo-248515.png') no-repeat center/cover;
 	display: flex;
 	justify-content: center;
-}
-
-.content-wrapper {
-	text-align: center;
-	max-width: 880px;
-	padding: 0 26px;
-	z-index: 2;
+	align-items: center;
+	width: 100%;
 }
 
 h1 {
@@ -58,6 +69,7 @@ h1 {
 	padding: 0 0 35px;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 h2 {
@@ -68,28 +80,30 @@ h2 {
 .column-text p {
 	columns: 2;
 	column-gap: 22px;
-	max-width: 880px;
 }
 
 #section-b {
 	padding: 35px 18px;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 #section-b ul {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	gap: 40px;
 	list-style: none;
-	width: 100%;
+	padding: 0;
 }
 
 .card {
 	background-color: white;
-	width: 300px;
-	height: 500px;
+	width: 100%;
+	max-width: 300px;
+	min-height: 450px;
+	display: flex;
+	flex-direction: column;
 }
 
 .card-content {
@@ -112,39 +126,43 @@ h2 {
 
 #section-c {
 	background-color: white;
-	padding: 35px;
+	width: 100%;
+	padding: 35px 0;
 	display: flex;
 	justify-content: center;
 }
 
 #section-d {
 	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .box {
 	padding: 35px;
 	color: white;
-	flex: 1;
-	min-width: 50%;
+	flex: 1 1 300px;
+	text-align: center;
 }
 
 .box-1 {
 	background-color: rgb(33, 129, 238);
-	text-align: center;
 }
 
 .box-2 {
 	background-color: #333;
-	text-align: center;
 }
 
 #main-footer {
 	padding: 35px;
+	width: 100%;
 	background-color: black;
 	color: white;
 	font-size: 18px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #main-footer div a {
@@ -159,6 +177,7 @@ h2 {
 
 	#section-b ul {
 		flex-direction: column;
+		align-items: center;
 		gap: 20px;
 	}
 
@@ -168,11 +187,7 @@ h2 {
 
 	#main-footer {
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#main-footer div {
-		padding: 10px 0;
+		text-align: center;
+		gap: 10px;
 	}
 }
